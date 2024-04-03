@@ -1,0 +1,12 @@
+# this is a comment
+[gene-expression]
+reference,/gpfs1/tangfuchou_pkuhpc/tangfuchou_cls/liumengya/Pipeline/database/refdata-cellranger-mm10-3.0.0
+
+[vdj]
+reference,/gpfs1/tangfuchou_pkuhpc/tangfuchou_cls/liumengya/Pipeline/database/refdata-cellranger-vdj-GRCm38-alts-ensembl-7.0.0
+
+[libraries]
+fastq_id,fastqs,lanes,feature_types
+CHI_LN_BCR,/gpfs1/tangfuchou_pkuhpc/tangfuchou_cls/liumengya/Immune_Rawdata/190701A_LN_BCR/CHI_LN_BCR,any,vdj-b
+CHI_LN_TCR,/gpfs1/tangfuchou_pkuhpc/tangfuchou_cls/liumengya/Immune_Rawdata/190701A_LN_TCR/CHI_LN_TCR,any,vdj-t
+CHI_LN,/gpfs1/tangfuchou_pkuhpc/tangfuchou_cls/liumengya/Immune_Rawdata/190701A_LN_5/CHI_LN,any,gene expression
