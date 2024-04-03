@@ -1,0 +1,20 @@
+@include "snp_clusterer_cs.mro"
+
+call SNP_CLUSTERER_CS(
+    reference_path       ="/gpfs1/tangfuchou_pkuhpc/tangfuchou_cls/liumengya/Immune_Rawdata/refdata_mm10_RFP",
+    possorted_genome_bam ="/gpfs1/tangfuchou_pkuhpc/tangfuchou_cls/liumengya/Immune_Rawdata/190701A_LN_5/snp/ln_10x/possorted_genome_bam.bam",
+    cell_barcodes        ="/gpfs1/tangfuchou_pkuhpc/tangfuchou_cls/liumengya/Immune_Rawdata/190701A_LN_5/snp/ln_10x/barcodes.tsv",
+    align                = {"high_conf_mapq":255},
+    min_snp_call_qual    = 0,
+    min_bcs_per_snp      = 2,
+    min_snp_obs          = 1,
+    min_snp_base_qual    = 1,
+    base_error_rate      = null,
+    seed                 = 0,
+    iterations           = 10000,
+    burn                 = 1000,
+    skip                 = 5,
+    cluster_ground_truth = null,
+    min_depth            = 0,
+    min_posterior        = 0.8,
+)
